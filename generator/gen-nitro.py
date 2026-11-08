@@ -1,10 +1,14 @@
-# BY FLOWKIRA
-# use a vpn
+# BY FLOWKIRA pls dont copy
+# use a vpn for security (optional)
 import requests
 import time
 import random
 import string
+from rich import print
 
+def logo():
+    print("""[purple]
+    """)
 code_NitroFormat = string.ascii_letters + string.digits
 
 while True:
@@ -17,7 +21,7 @@ while True:
         print(f"CODE VALID [{code_NitroGenerate}]")
         break
     if r.status_code == 429:
-        print("Discord detect the script...")
+        print("Discord block the script")
         time.sleep(620)
     if r.status_code == 404:
         print("no exist")
